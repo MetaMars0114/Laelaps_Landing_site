@@ -10,6 +10,7 @@ import { Private } from "./components/private";
 import { NFT } from "./components/nft";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
+import Background from "./components/Background";
 
 function App() {
   const [landingPageData, setLandingPageData] = useState({});
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+      <Background />
       <Navigation />
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />

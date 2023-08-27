@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React, {useState, useEffect } from "react";
 import './App.css';
+import { Navigation } from "./components/navigation";
+import { Header } from "./components/header";
+import { Features } from "./components/features";
+import { About } from "./components/about";
+import { Tiers } from "./components/tiers";
+import { Wallet } from "./components/wallet";
+import { Private } from "./components/private";
+import { NFT } from "./components/nft";
+import { Contact } from "./components/contact";
+import JsonData from "./data/data.json";
 
 function App() {
+  const [landingPageData, setLandingPageData] = useState({});
+
+  useEffect(() => {
+    setLandingPageData(JsonData);
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation />
+      <Header data={landingPageData.Header} />
+      <About data={landingPageData.About} />
+      <Tiers data={landingPageData.Tiers} />
+      <Features data={landingPageData.Features} />
+      <Wallet data={landingPageData.Wallet} />
+      <Private data={landingPageData.Private} />
+      <NFT data={landingPageData.NFT} />
+      <Contact data={landingPageData.Contact} />
     </div>
   );
 }

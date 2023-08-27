@@ -1,0 +1,184 @@
+{
+  "Header": {
+    "title": "We are a Landing Page",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+  },
+  "About": {
+    "paragraph": "Laelaps is an innovative project that leverages the power of data to elevate your blockchain experience. We gather, simplify, and deliver crucial data to help you fine-tune your trading strategies. With Laelaps, you are not just transacting, you are growing.",
+    "Why": [
+      "Lorem ipsum dolor",
+      "Tempor incididunt",
+      "Lorem ipsum dolor",
+      "Incididunt ut labore"
+    ],
+    "Why2": [
+      "Aliquip ex ea commodo",
+      "Lorem ipsum dolor",
+      "Exercitation ullamco",
+      "Lorem ipsum dolor"
+    ]
+  },
+  "Wallet": [
+    {
+      "title": "Project Title",
+      "largeImage": "/assets/img/portfolio/01-large.jpg",
+      "smallImage": "/assets/img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "/assets/img/portfolio/02-large.jpg",
+      "smallImage": "/assets/img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "/assets/img/portfolio/03-large.jpg",
+      "smallImage": "/assets/img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "/assets/img/portfolio/04-large.jpg",
+      "smallImage": "/assets/img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "/assets/img/portfolio/05-large.jpg",
+      "smallImage": "/assets/img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "/assets/img/portfolio/06-large.jpg",
+      "smallImage": "/assets/img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "/assets/img/portfolio/07-large.jpg",
+      "smallImage": "/assets/img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "/assets/img/portfolio/08-large.jpg",
+      "smallImage": "/assets/img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "/assets/img/portfolio/09-large.jpg",
+      "smallImage": "/assets/img/portfolio/09-small.jpg"
+    }
+  ],
+  "Tiers": [
+    {
+      "name": "Europa",
+      "text": "Europa holders enjoy alerts with a 30-second delay and access to Laelaps toolkit with Maestro Integration."
+    },
+    {
+      "name": "Zeus",
+      "text": "Holders with .5% or more of the supply get complete access to Laelaps toolkit with Maestro Integration, Zeus Discussion Group, and more. Take control with Automatic Updates and Unique Buy Counter."
+    },
+    {
+      "name": "Thebes",
+      "text": "Thebes holders receive alerts with a 60-second delay and have access to the Laelaps toolkit."
+    },
+    {
+      "name": "Villager",
+      "text": "Never miss a pending 100x opportunity. Villager holders will be guided by Laelaps to potential moonshots with tokens over 50x and over 100k market cap."
+    }
+  ],
+  "Private": [
+    {
+      "img": "/assets/img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "/assets/img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "/assets/img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "/assets/img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "/assets/img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "/assets/img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "/assets/img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "/assets/img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "/assets/img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "/assets/img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": [
+    {
+      "icon": "/assets/img/World icon.png",
+      "title": "Metaverse Ready",
+      "text": "Become a part of the Laelaps ecosystem and contribute to our collective growth."
+    },
+    {
+      "icon": "/assets/img/Setting icon.png",
+      "title": "Forging Events",
+      "text": "Become a part of the Laelaps ecosystem and contribute to our collective growth."
+    },
+    {
+      "icon": "/assets/img/Clothes icon.png",
+      "title": "Lealaps Wearables",
+      "text": "Become a part of the Laelaps ecosystem and contribute to our collective growth."
+    },
+    {
+      "icon": "/assets/img/Key icon.png",
+      "title": "Special Access",
+      "text": "Become a part of the Laelaps ecosystem and contribute to our collective growth."
+    }
+  ],
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ]
+}

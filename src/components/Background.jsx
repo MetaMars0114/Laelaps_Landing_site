@@ -15,12 +15,19 @@ const Model = () => {
   let characterMixer = new THREE.AnimationMixer(character.scene);
   character.animations.forEach((clip) => {
     const action = characterMixer.clipAction(clip);
+    action.setDuration(5);
     action.play();
   });
 
   let portalMixer = new THREE.AnimationMixer(portal.scene);
   portal.animations.forEach((clip) => {
     const action = portalMixer.clipAction(clip);
+    action.play();
+  });
+
+  let coinMixer = new THREE.AnimationMixer(coins.scene);
+  coins.animations.forEach((clip) => {
+    const action = coinMixer.clipAction(clip);
     action.play();
   });
 
@@ -39,6 +46,7 @@ const Model = () => {
   useFrame((state, delta) => {
     characterMixer.update(delta);
     portalMixer.update(delta);
+    coinMixer.update(delta);
   });
 
   useEffect(() => {

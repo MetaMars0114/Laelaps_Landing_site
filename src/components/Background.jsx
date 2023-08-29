@@ -1,5 +1,5 @@
 import {Suspense, useEffect, useState} from "react";
-import {useAnimations, useGLTF} from "@react-three/drei";
+import {PerspectiveCamera, useGLTF} from "@react-three/drei";
 import {Canvas, useFrame} from "@react-three/fiber";
 import * as THREE from 'three'
 import {MathUtils} from "three";
@@ -7,46 +7,23 @@ import {MathUtils} from "three";
 const Model = () => {
   const initRotation = [68, 86.5, 0]
   const initPosition = [50,  -220, -110];
-  const initCoinPosition = [-1500,  -100, 300];
-  const initCoinRotation = [0, 60, 0];
-  const character = useGLTF('/assets/fbx/Character.glb')
-  const coins = useGLTF('/assets/fbx/Coins.glb')
-  const portal = useGLTF('/assets/fbx/Portal.glb')
-  let characterMixer = new THREE.AnimationMixer(character.scene);
-  character.animations.forEach((clip) => {
-    const action = characterMixer.clipAction(clip);
+  const allScene = useGLTF('/assets/fbx/Scene.glb')
+
+  let mixer = new THREE.AnimationMixer(allScene.scene);
+  allScene.animations.forEach((clip) => {
+    const action = mixer.clipAction(clip);
     action.setDuration(5);
-    action.play();
-  });
-
-  let portalMixer = new THREE.AnimationMixer(portal.scene);
-  portal.animations.forEach((clip) => {
-    const action = portalMixer.clipAction(clip);
-    action.play();
-  });
-
-  let coinMixer = new THREE.AnimationMixer(coins.scene);
-  coins.animations.forEach((clip) => {
-    const action = coinMixer.clipAction(clip);
     action.play();
   });
 
   const [rotation, setRotation] = useState(initRotation);
   const [position, setPosition] = useState(initPosition);
-  const [coinPosition, setCoinPosition] = useState(initCoinPosition);
-  const [coinRotation, setCoinRotation] = useState(initCoinRotation);
-
   const handleScroll = () => {
-    console.log(window.scrollY);
-    setRotation([initRotation[0]  - 0.02 * window.scrollY, initRotation[1] - 0.02 * window.scrollY, initRotation[2]]);
-    setCoinPosition([initCoinPosition[0] + 0.3 * window.scrollY, initCoinPosition[1], initCoinPosition[2] - 0.02 * window.scrollY]);
-    setCoinRotation([initCoinRotation[0] , initCoinRotation[1] - 0.01 * window.scrollY, initCoinRotation[2]]);
+    setRotation([initRotation[0] - 0.02 * window.scrollY, initRotation[1] - 0.02 * window.scrollY, initRotation[2]]);
   };
 
   useFrame((state, delta) => {
-    characterMixer.update(delta);
-    portalMixer.update(delta);
-    coinMixer.update(delta);
+    mixer.update(delta);
   });
 
   useEffect(() => {
@@ -56,10 +33,8 @@ const Model = () => {
   return (
     <Suspense fallback={null}>
       <color attach="background" args={["#152858"]} />
-      <ambientLight intensity={5} />
-      <primitive object={character.scene} rotation={[MathUtils.degToRad(rotation[0]), MathUtils.degToRad(rotation[1]), MathUtils.degToRad(rotation[2])]} position={position} />
-      <primitive object={coins.scene} rotation={[MathUtils.degToRad(coinRotation[0]), MathUtils.degToRad(coinRotation[1]), MathUtils.degToRad(coinRotation[2])]} position={coinPosition} />
-      <primitive object={portal.scene} />
+      <ambientLight intensity={10} />
+      <primitive object={allScene.scene} rotation={[MathUtils.degToRad(rotation[0]), MathUtils.degToRad(rotation[1]), MathUtils.degToRad(rotation[2])]}  position={position}/>
     </Suspense>
   );
 }

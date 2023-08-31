@@ -19,7 +19,7 @@ const Model = () => {
   let mixer = new THREE.AnimationMixer(allScene.scene);
   allScene.animations.forEach((clip) => {
     const action = mixer.clipAction(clip);
-    action.setDuration(5);
+    action.setDuration(15);
     action.play();
   });
 

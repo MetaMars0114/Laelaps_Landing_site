@@ -5,7 +5,7 @@ export const Private = (props) => {
     <div id="private">
       <div className="private">
         <div className="row">
-         <div className="col-md-6 col-sm-12 col-xs-12 private-left">
+         <div className="col-md-6 col-sm-12 col-xs-12 col-md-offset-6 private-left">
             <img src="/assets/img/Private icon.png" alt="wallet" width="6%" className="private_img"/>
             <p className="wallet_title">Private Filters</p>
             <p className="wallet_text">

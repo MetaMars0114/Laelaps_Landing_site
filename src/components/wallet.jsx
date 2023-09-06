@@ -5,9 +5,6 @@ export const Wallet = (props) => {
     <div id="wallet">
       <div className="wallet">
         <div className="row">
-          <div className="col-md-6 wallet_left">
-            {""}
-          </div>
           <div className="col-md-6 wallet-right">
             <img src="/assets/img/Wallet icon.png" alt="wallet" width="6%" className="wallet_img"/>
             <p className="wallet_title">Wallet Scanner</p>

@@ -10,7 +10,7 @@ export const NFT = (props) => {
             <p className="nft_up_subtitle">
               Elevate your DeFi experience with our Master Key NFT.
             </p>
-            <p className="nft_up_text"> 
+            <p className="nft_up_text">
               Become a part of the Laelaps ecosystem and contribute to our collective growth.
             </p>
           </div>
@@ -19,11 +19,11 @@ export const NFT = (props) => {
           </div>
         </div>
         <div className="row">
-         <div className="col-md-6 private-left">
+         <div className="col-md-offset-6 col-md-6 private-left">
             <p className="nft_up_subtitle">
               Master Key
             </p>
-            <p className="nft_up_text"> 
+            <p className="nft_up_text">
             The Master Key NFT is your passport to the Zeus tier groupand access to the private bot. Every Master Key purchase contributes directly towards buybacks and burns of $LAELAPS, reducing token supply and amplifying value.
             </p>
             <div className="nft_button">
@@ -40,7 +40,7 @@ export const NFT = (props) => {
                 </div>
               </button>
             </div>
-            
+
           </div>
           <div className="col-md-6 private_right">
             {""}

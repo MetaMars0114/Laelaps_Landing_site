@@ -5,8 +5,8 @@ export const About = (props) => {
     <div id="about">
       <div className="about">
         <div className="row">
-          <div className="col-xs-12 col-md-6">
-            <div className="about-text">
+          <div className="col-xs-12 col-md-offset-6 col-md-6">
+            <div>
               <p className="about_text">About us</p>
               <p className="about_subtext">Transforming marketplaces</p>
               <p>{props.data ? props.data.paragraph : "loading..."}</p>

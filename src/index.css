@@ -5,9 +5,41 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 1280px;
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    min-width: unset;
+  }
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Monopol';
+  src: url('/public/assets/fonts/Monopol.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Mori Gothic';
+  src: url('/public/assets/fonts/MoriGothic.woff') format("woff");
+}
+
+@font-face {
+  font-family: 'Editor';
+  src: url('/public/assets/fonts/Editor.woff') format("woff");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
